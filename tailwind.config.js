@@ -1,16 +1,23 @@
 module.exports = {
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
+	darkMode: 'class',
 	theme: {
 		extend: {
 			colors: {
-				'bookmark-purple': '#10CDD7',
-				'bookmark-red': '#fa5959',
-				'bookmark-blue': '#242a45',
-				'bookmark-grey': '#9194a2',
-				'bookmark-white': '#f2f7f7',
+				'backg-light': 'FBFBFE',
+				'backg-dark': '#161927',
+				'backg-white': '#F1F2F3',
+				't-light': '#F1F2F3',
+				't-dark': '#232429',
+				'contact-light': '#EEF0FC',
+				'contact-dark': '#1D2135 ',
+				'bookmark-purple': '#576EE0',
+				'bookmark-white': '#f7f7f7',
 			},
 		},
-		fontFamily: { Montserrat: ['Montserrat, sans-serif'] },
+		fontFamily: {
+			Montserrat: ['Montserrat Alternates, sans-serif'],
+		},
 		container: {
 			center: true,
 			padding: '1rem',

@@ -1,10 +1,16 @@
+import { useState } from 'react';
+import Form from './components/Form';
 import Navbar from './components/Navbar';
 
 function App() {
+	const [darkTheme, setDarkTheme] = useState(false);
 	return (
 		<>
-			<div>
-				<Navbar />
+			<div className="bg-backg-light dark:bg-backg-dark">
+				<div className={darkTheme ? 'dark' : ''}>
+					<Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
+					<Form />
+				</div>
 			</div>
 		</>
 	);
